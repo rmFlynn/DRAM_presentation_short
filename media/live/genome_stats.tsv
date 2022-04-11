@@ -1,0 +1,16 @@
+genome	number of scaffolds	5S rRNA	16S rRNA	23S rRNA	tRNA count
+Cytophaga_hutchinsonii_ATCC_33406	1	3 present	3 present	3 present	40
+Dechloromonas_aromatica_RCB	1		4 present	4 present	64
+Desulfovibrio_desulfuricans_ATCC_27774	1	3 present	3 present	3 present	53
+Gallionella_capsiferriformans_ES-2	1	3 present	3 present	3 present	52
+Geobacter_sulfurreducens_PCA	1	2 present	2 present	2 present	49
+Methanosarcina_acetivorans_str._C2A	1	3 present	3 present	3 present	60
+Methylobacter_whittenburyi	1		Methylobacter_whittenburyi_NZ_JQNS01000005.1 (1, 907)		15
+Nitrosarchaeum_koreense_MY1	1	Nitrosarchaeum_koreense_MY1_NZ_AFPU01000001.1 (215335, 215447)	Nitrosarchaeum_koreense_MY1_NZ_AFPU01000001.1 (932095, 933559)	Nitrosarchaeum_koreense_MY1_NZ_AFPU01000001.1 (928963, 931928)	45
+Nitrospira_defluvii	1	Nitrospira_defluvii_NC_014355.1 (1389814, 1389923)	Nitrospira_defluvii_NC_014355.1 (1384632, 1386168)	Nitrospira_defluvii_NC_014355.1 (1386680, 1389681)	48
+Paceibacter_normanii_SCGC_AAA255-P19	1				20
+Prometheoarchaeum_syntrophicum_MK-D1	1		Prometheoarchaeum_syntrophicum_MK-D1_CP042905.1_Anaerobic_archaeon_MK-D1_chromosome,_complete_genome (724530, 726016)	Prometheoarchaeum_syntrophicum_MK-D1_CP042905.1_Anaerobic_archaeon_MK-D1_chromosome,_complete_genome (656095, 659004)	45
+Pseudomonas_putida_KT2440	1	8 present	7 present	7 present	76
+Streptomyces_coelicolor_A3	1	6 present	6 present	6 present	71
+Synechocystis_sp._PCC_6803	1		2 present	2 present	41
+Syntrophobacter_fumaroxidans_MPOB	1	2 present	2 present	2 present	52

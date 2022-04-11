@@ -1,61 +1,36 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+        <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/white.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-			<div class="slides">
-				<section>
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+            <div class="slides">
+                <section>
 
 
-						<img src="./figures/DRAM_logo_large (1).png" alt="dram logo" style="height: 280px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
-					<h4> Distilled And Refined Annotation Of Metabolism Enables Rapid Understanding Of Microbial And Viral Functional Potential </h4>
-					<p>
-						<small>
-						<img src="./figures/CSU-Ram-357-617.png" alt="dram logo" style="height: 30px; margin: 0 auto 4rem auto; background: transparent;">
+                        <img src="./media/DRAM_logo_large.png" alt="dram logo" style="height: 280px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+                    <h4> DRAM: Distilled And Refined Annotation Of Metabolism Enables Rapid Understanding Of Microbial And Viral Functional Potential </h4>
+                    <p>
+                        <small>
+                        <img src="./media/CSU-Ram-357-617.png" alt="dram logo" style="height: 30px; margin: 0 auto 4rem auto; background: transparent;">
                                                         Rory M. Flynn</small>
-					</p>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
-    ### A Pressing Need
-      <!-- .slide: data-background="#4c4c4c"-->
-    Microbiome sequencing generates a deluge of genomic information.
-
-    To deal with it we need tools that are:
-
-    - Robust and scalable across variable datasets <!-- .element: class="fragment" data-fragment-index="1" -->
-
-    - Flexible in application and integration <!-- .element: class="fragment" data-fragment-index="2" -->
-
-    - Efficient and available, computationally <!-- .element: class="fragment" data-fragment-index="3" -->
-
-    - User-friendly for experts and students <!-- .element: class="fragment" data-fragment-index="4" -->
-
-    ---
-    ### Introducing DRAM
-      <!-- .slide: data-background="#4c4c4c"-->
-
-      We created DRAM (Distilled and Refined of Annotation of Metabolism)
-
-      - Analyzes and curates genome annotations from multiple databases <!-- .element: class="fragment" data-fragment-index="1" -->
-      - Summarizing the metabolic functions encoded by each genome <!-- .element: class="fragment" data-fragment-index="2" -->
-      - Dose this with speed and reproducibility that is impossible with manual curation <!-- .element: class="fragment" data-fragment-index="3" -->
-    ---
-    ### Introducing DRAM
-      <!-- .slide: data-background="#4c4c4c"-->
+                    </p>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+    ### The problem!
        <style>
       .container{
           display: flex;
@@ -68,44 +43,76 @@
       <div class="container">
 
       <div class="col">
-          <img src="./figures/RoryFig-1.png" alt="DRAM Flow" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+          <img src="./media/dram_cartoon_raw.jpg" alt="DRAM Flow" style="height: 250px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
       </div>
 
       <div class="col">
-            <div class="r-stack">
+          <img src="./media/contributions.png" alt="DRAM Flow" style="height: 250px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
 
-      <p class="fragment fade-in-then-out"> Come see our poster for a full overview of the workflow... but in a nutshell</p>
-      <p class="fragment fade-in-then-out"> DRAM Annotats Genomes/MAGs/Assemblys with a set of databases</p>
-      <p class="fragment fade-in-then-out"> The information from these databases is then Distilled and Refined into 3 distalate levels</p>
-          </div>
       </div>
+      </div>
+      <div class="r-stack">
+      <p class="fragment fade-in-then-out" data-fragment-index="1"> Come see our poster for a full explanation, but to cut to the point</p>
+      <p class="fragment fade-in-then-out" data-fragment-index="2"> A microbiome has many members, each with many proteins that can enable metabolic capabilities </p>
+      <p class="fragment fade-in-then-out" data-fragment-index="3"> These communities can have global effects but you can't study every single cell. How can we find out what is going on with them!</p>
+      <p class="fragment fade-in-then-out" data-fragment-index="4"> Modern genetics can help! We how have techniques to get the genetics metabolic tools</p>
+      <p class="fragment fade-in-then-out" data-fragment-index="5"> But that is still to much data , and it is very messy, we need a tool to distill the information</p>
+      <h3 class="fragment fade-in-then-out data-fragment-index="6"> <img src="./media/DRAM_logo_large.png" alt="dram logo" style="height: 280px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> </h3>
       </div>
 
     ---
-    <!-- .slide: data-background-iframe="./figures/live/annotations.html" data-background-interactive data-background="#FFFFFF"-->
-    <div style="position: absolute; width: 90%; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 40px; text-align: left;">
-        <p>DRAM’s 3 outputs: The Raw, All annotations and found genes, filtered and organized. </p>
+    <!-- .slide: data-background-iframe="./media/live/annotations.html" data-background-interactive data-background="#FFFFFF"-->
+    <div style="position: absolute; width: 110%; box-shadow: 0 1px 4px rgba(300,300,300,0.5), 0 5px 5px rgba(300,300,300,0.2); background-color: rgba(300, 300, 300, 0.9); color: #000; padding: 10px; font-size: 40px; text-align: center;">
+       <style>
+      .container{
+          display: flex;
+      }
+      .col{
+          flex: 1;
+      }
+      </style>
+
+      <div class="container">
+
+      <div class="col">
+          <img src="./media/dram_cartoon_raw.jpg" alt="DRAM Flow" style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+      </div>
+
+      <div class="col">
+          <p>Raw contains all information </p>
+      </div>
+      </div>
     </div>
 
 
 
     ---
-    <!-- .slide: data-background-iframe="./figures/live/genome_stats.html" data-background-interactive data-background="#FFFFFF"-->
-    <div style="position: absolute; width: 90%; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 40px; text-align: left;">
-        <p>DRAM’s 3 outputs: The Distillate, Taxonomy, quality statistics, and key metabolisms </p>
+    <!-- .slide: data-background-iframe="./media/live/genome_stats.html" data-background-interactive data-background="#FFFFFF"-->
+    <div style="position: absolute; width: 110%; box-shadow: 0 1px 4px rgba(300,300,300,0.5), 0 5px 5px rgba(300,300,300,0.2); background-color: rgba(300, 300, 300, 0.9); color: #000; padding: 10px; font-size: 40px; text-align: center;">
+       <style>
+      .container{
+          display: flex;
+      }
+      .col{
+          flex: 1;
+      }
+      </style>
+
+      <div class="container">
+
+      <div class="col">
+          <img src="./media/dram_cartoon_dist.jpg" alt="DRAM Flow" style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+      </div>
+
+      <div class="col">
+          <p>Distillate contains more information, but less than the raw </p>
+      </div>
+      </div>
     </div>
     ---
     ####
-    <!-- .slide: data-background-iframe="./figures/live/product.html" data-background-interactive data-background="#FFFFFF"-->
-    <div style="position: absolute; width: 90%; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 40px; text-align: left;">
-        <p>DRAM’s 3 outputs: The Product, key metabolisms in a user freandly visual interface. </p>
-    </div>
-
-
-    ---
-    ### Addressing Scientific Challenges
-     <!-- .slide: data-background="#4c4c4c"-->
-     On going development aims:
+    <!-- .slide: data-background-iframe="./media/live/product.html" data-background-interactive data-background="#FFFFFF"-->
+    <div style="position: absolute; width: 110%; box-shadow: 0 1px 4px rgba(300,300,300,0.5), 0 5px 5px rgba(300,300,300,0.2); background-color: rgba(300, 300, 300, 0.9); color: #000; padding: 10px; font-size: 40px; text-align: center;">
        <style>
       .container{
           display: flex;
@@ -118,111 +125,45 @@
       <div class="container">
 
       <div class="col">
-          <img src="./figures/GrantFig2-1.png" alt="DRAM Flow" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+          <img src="./media/dram_cartoon_prod.jpg" alt="DRAM Flow" style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
       </div>
 
       <div class="col">
-
-     - More user customization!
-
-     - Non-homology based annotation methods!
-
-     More moudular user directed overall desine. <!-- .element: class="fragment" data-fragment-index="1" -->
+          <p>With the Product, we can start putting the metabolism together</p>
       </div>
-
       </div>
-
-
-    ---
-    ### Addressing Scientific Challenges
-     <!-- .slide: data-background="#4c4c4c"-->
-    We are adding more user customization.
-
-    - Custom database searches <!-- .element: class="fragment" data-fragment-index="1" -->
-    - Environment specific metabolism summaries <!-- .element: class="fragment" data-fragment-index="2" -->
-    - Database selection <!-- .element: class="fragment" data-fragment-index="3" -->
-    - Functional adjective <!-- .element: class="fragment" data-fragment-index="4" -->
-
-    ---
-    ### Addressing Scientific Challenges
-     <!-- .slide: data-background="#4c4c4c"-->
-    #### Non-homology annotation methods
-    We address challenges in homology-based annotation
-
-    - DRAM significantly out performed other annotators <!-- .element: class="fragment" data-fragment-index="1" -->
-    - We tried many non-homology curation approaches <!-- .element: class="fragment" data-fragment-index="2" -->
-    - DRAM offers acuracy without manual curration <!-- .element: class="fragment" data-fragment-index="3" -->
-
-    ---
-    ### Addressing Technical Challenges
-     <!-- .slide: data-background="#4c4c4c"-->
-
-   - Careful study of optimal genome searching algorithms <!-- .element: class="fragment" data-fragment-index="1" -->
-   - Refactoring code, icluding adding parallelization <!-- .element: class="fragment" data-fragment-index="2" -->
-   - Removing the tools that under perform. <!-- .element: class="fragment" data-fragment-index="3" -->
-   - Improving KBase integration. <!-- .element: class="fragment" data-fragment-index="4" -->
-   - Also effective logging,  more streamlined user interface <!-- .element: class="fragment" data-fragment-index="5" -->
-
-    ---
-
-   ### Addressing Technical Challenges
-      <!-- .slide: data-background="#4c4c4c"-->
-   #### For example:
-
-      <div class="r-stack">
-          <p class="fragment fade-out">
-               <img src="./figures/mmseqs_vs_hmmer_comparison.png" alt="" style="height: 250px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
-          </p>
-          <p class="fragment fade-in">
-               <img src="./figures/speed_results_clock.png" alt="" style="height: 250px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
-          </p>
-      </div>
-
-       HMMER and MMSeqs negligible difference in annotation performance
-      <p class="fragment fade-in"> But MMSeqs is significantly faster.  </p>
-
-
+    </div>
     ---
     ### Conclusions
-      <!-- .slide: data-background="#4c4c4c"-->
-     DRAM is already a highly competitive annotation tool.
-     **However**, It must evolve with Computation, Microbiology, and Biochemistry.
-
-    - Robust by integrating homology techniques <!-- .element: class="fragment" data-fragment-index="1" -->
-    - Flexible with modulation <!-- .element: class="fragment" data-fragment-index="2" -->
-    - Efficient with modernized code and tools <!-- .element: class="fragment" data-fragment-index="3" -->
-    - More user-friendly with better integration into KBase. <!-- .element: class="fragment" data-fragment-index="4" -->
-
-    ---
-    ### Conclusions
-      <!-- .slide: data-background="#4c4c4c"-->
      The future of Science is bright, and DRAM will evolve to meet that future.
-
     ---
     ## Funding
-    <!-- .slide: data-background="#FFFFFF"-->
-    <img src="./figures/funding/all.png" alt="DRAM Flow" style="height: 200px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+
+    <img src="./media/funding/all.png" alt="DRAM Flow" style="height: 200px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+
+    # The END
 
 
-					</script>
-				</section>
-			</div>
-		</div>
+                    </script>
+                </section>
+            </div>
+        </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
 </html>
+
